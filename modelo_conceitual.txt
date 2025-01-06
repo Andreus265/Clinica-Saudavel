@@ -1,0 +1,30 @@
+Evento chegada de paciente
+    Escalone a próxima chegada.
+    Se o consultório está ocupado.
+        então
+            numero_pacientes_em_fila <- numero_pacientes_em_fila + 1.
+            armazenar estatisticas.
+        Se não 
+            consultorio <- ocupado.
+            escalone proximo evento_de_atendimento para tempo corrente + tempo de atendimento.
+            armazenar estatisticas.
+            retorne fim.
+
+Evento de atendimento
+    consultorio <- liberar.
+    pacientes_atendidos <- pacientes_atendidos + 1
+    Se o numero_pacientes_em_fila é maior que 0
+        então
+            selecionar um paciente da fila.
+            numero_pacientes_em_fila <- numero_pacientes_em_fila - 1.
+            consultorio <- ocupado.
+            escalone o proximo evento_de_atendimento para tempo corrente + tempo de atendimento.
+            avançar a fila em uma posição.
+            acumular estatisticas.
+        
+        Se não
+            retorne fim.
+        
+
+
+ 

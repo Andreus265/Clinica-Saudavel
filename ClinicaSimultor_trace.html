@@ -1,0 +1,42 @@
+<HTML><HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Author" CONTENT="Tim Lechler">
+<META NAME="GENERATOR" CONTENT="DESMO-J 2.5.1e">
+<TITLE>.\ClinicaSimultor_trace.html</TITLE></HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+<A NAME="top"></A><br>
+<DIV align=center><H3>ClinicaSimultor - Trace</H3></DIV>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=3 WIDTH="100%" >
+<TR VALIGN=TOP><TD><B><DIV align=left>model</DIV></B></TD><TD><B><DIV align=left>time</DIV></B></TD><TD><B><DIV align=left>event</DIV></B></TD><TD><B><DIV align=left>entity</DIV></B></TD><TD><B><DIV align=left>action(s)</DIV></B></TD></TR>
+<TR VALIGN=TOP><TD>modelo da clinica vida saudavel</TD><TD>0.0000</TD><TD>----</TD><TD>----</TD><TD>initially Trace switched on</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>initially schedules 'TraceOff#1' at 3600.0000</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>initially Debug switched on</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>initially schedules 'DebugOff#1' at 3000.0000</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>initially samples 20.896608286856136 from chegada de paciente</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>initially schedules 'evento de geracao de paciente#1' at 1253.7964</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD>1253.7964</TD><TD>'evento de geracao de paciente#1'</TD><TD> </TD><TD>samples 35.19949492126501 from chegada de paciente</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>schedules 'evento geracao de paciente#1' at 3365.7661</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>schedules 'evento de chegada#1' of '1#1' at 1253.7964</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>updates 'tempo de chegada dos pacientes'</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD>'evento de chegada#1'</TD><TD>'1#1'</TD><TD>updates 'Pacientes entrando durante a simulação'</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>inserts itself into 'Fila de Pacientes do Consultório 1'</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>removes itself from 'Fila de Pacientes do Consultório 1'</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>samples 25.069450445300063 from atendimento de paciente normal</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>schedules 'evento de final de atendimento#1' of 'consultorio1#1' and '1#1' at 2757.9635</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD>2757.9635</TD><TD>'evento de final de atendimento#1'</TD><TD>'consultorio1#1' and '1#1'</TD><TD>1#1saindo do consultorio</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD>3000.0000</TD><TD>'DebugOff#1'</TD><TD>----</TD><TD>Debug switched off</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD>3365.7661</TD><TD>'evento geracao de paciente#1'</TD><TD> </TD><TD>samples 21.797292466487388 from chegada de paciente</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>schedules 'evento geracao de paciente#2' at 4673.6037</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>schedules 'evento de chegada#2' of '2#1' at 3365.7661</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>updates 'tempo de chegada dos pacientes'</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD>'evento de chegada#2'</TD><TD>'2#1'</TD><TD>updates 'Pacientes entrando durante a simulação'</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>inserts itself into 'Fila de Pacientes do Consultório 1'</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>removes itself from 'Fila de Pacientes do Consultório 1'</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>samples 13.041670267180038 from atendimento de paciente grave</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>samples 9.115743150674323 from atendimento de paciente grave</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD> </TD><TD> </TD><TD> </TD><TD>schedules 'evento de final de atendimento#2' of 'consultorio1#1' and '2#1' at 3912.7107</TD></TR>
+<TR VALIGN=TOP><TD> </TD><TD>3600.0000</TD><TD>'TraceOff#1'</TD><TD>----</TD><TD>Trace switched off</TD></TR>
+</TABLE><P>
+<FONT SIZE=-1><A HREF=#top>top</A></FONT><P>
+<FONT SIZE=-2>created using <A HREF=http://www.desmoj.de>DESMO-J</A> Version 2.5.1e at Sun Jan 05 15:56:56 GMT-03:00 2025 - DESMO-J is licensed under <A HREF=http://www.apache.org/licenses/LICENSE-2.0>Apache License, Version 2.0</A></FONT>
+</BODY></HTML>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Author" content="Tim Lechler">
+<meta name="GENERATOR" content="DESMO-J 2.5.1e">
+<title>.\ClinicaSimultor_report.html</title></head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+<a name="top"></a><br />
+<p></p><h2><div align="center">ClinicaSimultor Report</div></h2><p></p><div align="center"><h3>Model modelo da clinica vida saudavel</h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Description</div></b></td></tr>
+<tr valign="top"><td>Modelo da clinica vida saudavel responsavel pelo sistema de fila e atendimento de clientes. A chegada de clientes e de forma exponencial com media de 15 minutos com cerca de 30% pacientes urgentes e 70% pacientes com condicoes menos gravesO tempo de atendimento tem uma distribuicao normal de 20 minutos e desvio padrao de 5 minutos para pacientes em condicoes normais e 3 minutos para condições gravesA clinica funciona durante 10 horas do dia e o objetivo e nunca ter mais de 5 pessoas em fila.</td></tr>
+</table><p></p>
+<font size="-1"><a href="#top">top</a></font><p></p>
+<hr><div align="center"><h3>Simulation Run</h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Property</div></b></td><td><b><div align="left">Content</div></b></td></tr>
+<tr valign="top"></tr>
+<tr valign="top"><td>Simulation duration</td><td>Experiment run from 0.0000 until 36000.0000.</td></tr>
+<tr valign="top"><td>Computation duration (HH:MM:SS)</td><td>00:00:00</td></tr>
+<tr valign="top"><td>Resets</td><td>No resets during the experiment run.</td></tr>
+<tr valign="top"><td>Seed</td><td>979</td></tr>
+<tr valign="top"><td>Errors</td><td>No errors or warnings have occurred.</td></tr>
+</table><p></p>
+<font size="-1"><a href="#top">top</a></font><p></p>
+<hr><div align="center"><h3>Histograms</h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Title</div></b></td><td><b><div align="left">(Re)set</div></b></td><td><b><div align="left">Obs</div></b></td><td><b><div align="left">Mean</div></b></td><td><b><div align="left">Std.Dev</div></b></td><td><b><div align="left">Min</div></b></td><td><b><div align="left">Max</div></b></td><td><b><div align="left">Unit</div></b></td></tr>
+<tr valign="top"><td>tempo de chegada dos pacientes</td><td>0.0000</td><td>32</td><td>18.34003</td><td>16.8493</td><td>0.83181</td><td>62.13847</td><td>none</td></tr>
+</table><p></p>
+<div align="center"><h3> </h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Cell</div></b></td><td><b><div align="left">Cell Range</div></b></td><td><b><div align="left">n</div></b></td><td><b><div align="left">%</div></b></td><td><b><div align="left">Cum. %</div></b></td><td><b><div align="left">|</div></b></td><td><b><div align="left">Color</div></b></td></tr>
+<tr valign="top"><td>0</td><td>(-Infinity, 0.0)</td><td>0</td><td>0.0</td><td>0.0</td><td>|</td><td width="20" bgcolor="#000000"></td></tr>
+<tr valign="top"><td>1</td><td>[0.0, 10.0)</td><td>15</td><td>46.875</td><td>46.875</td><td>|</td><td width="20" bgcolor="#FF0000"></td></tr>
+<tr valign="top"><td>2</td><td>[10.0, 20.0)</td><td>4</td><td>12.5</td><td>59.375</td><td>|</td><td width="20" bgcolor="#0000FF"></td></tr>
+<tr valign="top"><td>3</td><td>[20.0, 30.0)</td><td>7</td><td>21.875</td><td>81.25</td><td>|</td><td width="20" bgcolor="#00FF00"></td></tr>
+<tr valign="top"><td>4</td><td>[30.0, 40.0)</td><td>3</td><td>9.375</td><td>90.625</td><td>|</td><td width="20" bgcolor="#FFafaf"></td></tr>
+<tr valign="top"><td>5</td><td>[40.0, 50.0)</td><td>0</td><td>0.0</td><td>90.625</td><td>|</td><td width="20" bgcolor="#404040"></td></tr>
+<tr valign="top"><td>6</td><td>[50.0, Infinity)</td><td>3</td><td>9.375</td><td>100.0</td><td>|</td><td width="20" bgcolor="#FFc800"></td></tr>
+</table><p></p>
+<div align="center">
+<canvas id="histogramCanvas0" width="500" height="350">
+Your browser is not able to display this graphic.<br />
+This could be because it does not support the canvas-Element by html5<noscript> or because it does not support JavaScript</noscript>.
+</canvas>
+</div><p></p>
+<script type="text/javascript">
+<!--
+var myCanvas = document.getElementById('histogramCanvas0');
+var myContext = myCanvas.getContext('2d');
+
+myContext.strokeStyle = '#000000';
+drawXScale();
+drawYScale();
+drawXAxis();
+drawYAxis();
+drawVBars();
+drawTextLabels();
+
+myContext.strokeRect(0, 0, myCanvas.width, myCanvas.height);
+
+function drawXAxis() {
+	myContext.beginPath();
+	myContext.moveTo(60, myCanvas.height-50);
+	myContext.lineTo(myCanvas.width-20, myCanvas.height-50);
+	myContext.stroke();
+	myContext.closePath();
+
+	myContext.save();
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'bottom';
+	myContext.font = 'bold 8pt Georgia';
+	myContext.fillText('tempo de chegada dos pacientes', 270, 340);
+	myContext.restore();
+}
+
+function drawYAxis() {
+	myContext.beginPath();
+	myContext.moveTo(60, 20);
+	myContext.lineTo(60, myCanvas.height-50);
+	myContext.stroke();
+	myContext.closePath();
+
+	myContext.save();
+	myContext.translate(0, myCanvas.height);
+	myContext.rotate(toRad(270));
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'top';
+	myContext.font = 'bold 8pt Georgia';
+	myContext.fillText('n', 190, 10);
+	myContext.restore();
+}
+
+function drawYScale() {
+	var yScale = 2;
+	var numOfYScale = 10;
+	var chartHeight = 280;
+	var chartWidth = 420;
+
+	myContext.save();
+	myContext.strokeStyle = '#bebebe';
+	for (var i=1; numOfYScale>=i; i++) {
+		myContext.beginPath();
+		myContext.moveTo(xToCanvasCoordinate(0-5), yToCanvasCoordinate(i*chartHeight/numOfYScale));
+		myContext.lineTo(xToCanvasCoordinate(chartWidth),  yToCanvasCoordinate(i*chartHeight/numOfYScale));
+		myContext.stroke();
+		myContext.closePath();
+	}
+	myContext.restore();
+
+	myContext.save();
+	myContext.textAlign = 'right';
+	myContext.textBaseline = 'middle';
+	for (var i=0; numOfYScale>=i; i++) {
+		var scaleText = i*yScale;
+		myContext.fillText(scaleText, 50, yToCanvasCoordinate(i*chartHeight/numOfYScale));
+	}
+	myContext.restore();
+}
+
+function drawTextLabels() {
+	var labels = ['< 0.0', '\u2265 0.0', '\u2265 10.0', '\u2265 20.0', '\u2265 30.0', '\u2265 40.0', '\u2265 50.0'];
+	var numOfData = 7;
+	var barWidth = 4/5*420 /numOfData;
+	var barGap = 1/5*420/(numOfData+1);
+
+	myContext.save();
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'top';
+	for (var i=0; numOfData>i; i++) {
+		var horTextPos = (i+1)*barGap + (i+0.5)*barWidth + 60;
+		myContext.fillText(labels[i], horTextPos, 310, barWidth);
+	}
+	myContext.restore();
+}
+
+function drawVBars() {
+	var dataValues = [0, 15, 4, 7, 3, 0, 3];
+	var colors = ['#000000', '#FF0000', '#0000FF', '#00FF00', '#FFafaf', '#404040', '#FFc800'];
+	var yScale = 2;
+	var numOfYScale = 10;
+	var chartHeight = 280;
+	var chartWidth = 420;
+	var xScale = 0;
+	var numOfXScale = 0;
+	var startXScale = 0;
+	var barWidth = 4/5*420 /dataValues.length;
+	var barGap = 1/5*420/(dataValues.length+1);
+
+	myContext.save();
+	for (var i=0; dataValues.length>i; i++) {
+		var startX = (i+1)*barGap + i*barWidth;
+		var barHeight = dataValues[i]/(yScale*numOfYScale) * chartHeight;
+		myContext.fillStyle = colors[i];
+		myContext.fillRect(xToCanvasCoordinate(startX), yToCanvasCoordinate(0), barWidth, 0-barHeight);
+	}
+	myContext.restore();
+}
+
+function drawXScale() {
+}
+
+function xToCanvasCoordinate(xCoordinate) {
+	return 60 + xCoordinate;
+}
+
+function yToCanvasCoordinate(yCoordinate) {
+	return myCanvas.height-50 - yCoordinate;
+}
+
+function toRad(x) {
+	return (x*Math.PI)/180;
+};
+//-->
+</script>
+<div align="center"><h3> </h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Title</div></b></td><td><b><div align="left">(Re)set</div></b></td><td><b><div align="left">Obs</div></b></td><td><b><div align="left">Mean</div></b></td><td><b><div align="left">Std.Dev</div></b></td><td><b><div align="left">Min</div></b></td><td><b><div align="left">Max</div></b></td><td><b><div align="left">Unit</div></b></td></tr>
+<tr valign="top"><td>Pacientes entrando durante a simulação</td><td>0.0000</td><td>32</td><td>4.73516</td><td>2.92042</td><td>0.34828</td><td>9.73699</td><td>none</td></tr>
+</table><p></p>
+<div align="center"><h3> </h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Cell</div></b></td><td><b><div align="left">Cell Range</div></b></td><td><b><div align="left">n</div></b></td><td><b><div align="left">%</div></b></td><td><b><div align="left">Cum. %</div></b></td><td><b><div align="left">|</div></b></td><td><b><div align="left">Color</div></b></td></tr>
+<tr valign="top"><td>0</td><td>(-Infinity, 0.0)</td><td>0</td><td>0.0</td><td>0.0</td><td>|</td><td width="20" bgcolor="#000000"></td></tr>
+<tr valign="top"><td>1</td><td>[0.0, 1.0)</td><td>2</td><td>6.25</td><td>6.25</td><td>|</td><td width="20" bgcolor="#FF0000"></td></tr>
+<tr valign="top"><td>2</td><td>[1.0, 2.0)</td><td>8</td><td>25.0</td><td>31.25</td><td>|</td><td width="20" bgcolor="#0000FF"></td></tr>
+<tr valign="top"><td>3</td><td>[2.0, 3.0)</td><td>1</td><td>3.125</td><td>34.375</td><td>|</td><td width="20" bgcolor="#00FF00"></td></tr>
+<tr valign="top"><td>4</td><td>[3.0, 4.0)</td><td>4</td><td>12.5</td><td>46.875</td><td>|</td><td width="20" bgcolor="#FFafaf"></td></tr>
+<tr valign="top"><td>5</td><td>[4.0, 5.0)</td><td>4</td><td>12.5</td><td>59.375</td><td>|</td><td width="20" bgcolor="#404040"></td></tr>
+<tr valign="top"><td>6</td><td>[5.0, 6.0)</td><td>1</td><td>3.125</td><td>62.5</td><td>|</td><td width="20" bgcolor="#FFc800"></td></tr>
+<tr valign="top"><td>7</td><td>[6.0, 7.0)</td><td>3</td><td>9.375</td><td>71.875</td><td>|</td><td width="20" bgcolor="#FF00FF"></td></tr>
+<tr valign="top"><td>8</td><td>[7.0, 8.0)</td><td>4</td><td>12.5</td><td>84.375</td><td>|</td><td width="20" bgcolor="#FFFF00"></td></tr>
+<tr valign="top"><td>9</td><td>[8.0, 9.0)</td><td>3</td><td>9.375</td><td>93.75</td><td>|</td><td width="20" bgcolor="#00FFFF"></td></tr>
+<tr valign="top"><td>10</td><td>[9.0, 10.0)</td><td>2</td><td>6.25</td><td>100.0</td><td>|</td><td width="20" bgcolor="#c0c0c0"></td></tr>
+<tr valign="top"><td>11</td><td>[10.0, Infinity)</td><td>0</td><td>0.0</td><td>100.0</td><td>|</td><td width="20" bgcolor="#7896d2"></td></tr>
+</table><p></p>
+<div align="center">
+<canvas id="histogramCanvas1" width="500" height="350">
+Your browser is not able to display this graphic.<br />
+This could be because it does not support the canvas-Element by html5<noscript> or because it does not support JavaScript</noscript>.
+</canvas>
+</div><p></p>
+<script type="text/javascript">
+<!--
+var myCanvas = document.getElementById('histogramCanvas1');
+var myContext = myCanvas.getContext('2d');
+
+myContext.strokeStyle = '#000000';
+drawXScale();
+drawYScale();
+drawXAxis();
+drawYAxis();
+drawVBars();
+drawTextLabels();
+
+myContext.strokeRect(0, 0, myCanvas.width, myCanvas.height);
+
+function drawXAxis() {
+	myContext.beginPath();
+	myContext.moveTo(60, myCanvas.height-50);
+	myContext.lineTo(myCanvas.width-20, myCanvas.height-50);
+	myContext.stroke();
+	myContext.closePath();
+
+	myContext.save();
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'bottom';
+	myContext.font = 'bold 8pt Georgia';
+	myContext.fillText('Pacientes entrando durante a simulação', 270, 340);
+	myContext.restore();
+}
+
+function drawYAxis() {
+	myContext.beginPath();
+	myContext.moveTo(60, 20);
+	myContext.lineTo(60, myCanvas.height-50);
+	myContext.stroke();
+	myContext.closePath();
+
+	myContext.save();
+	myContext.translate(0, myCanvas.height);
+	myContext.rotate(toRad(270));
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'top';
+	myContext.font = 'bold 8pt Georgia';
+	myContext.fillText('n', 190, 10);
+	myContext.restore();
+}
+
+function drawYScale() {
+	var yScale = 1;
+	var numOfYScale = 8;
+	var chartHeight = 280;
+	var chartWidth = 420;
+
+	myContext.save();
+	myContext.strokeStyle = '#bebebe';
+	for (var i=1; numOfYScale>=i; i++) {
+		myContext.beginPath();
+		myContext.moveTo(xToCanvasCoordinate(0-5), yToCanvasCoordinate(i*chartHeight/numOfYScale));
+		myContext.lineTo(xToCanvasCoordinate(chartWidth),  yToCanvasCoordinate(i*chartHeight/numOfYScale));
+		myContext.stroke();
+		myContext.closePath();
+	}
+	myContext.restore();
+
+	myContext.save();
+	myContext.textAlign = 'right';
+	myContext.textBaseline = 'middle';
+	for (var i=0; numOfYScale>=i; i++) {
+		var scaleText = i*yScale;
+		myContext.fillText(scaleText, 50, yToCanvasCoordinate(i*chartHeight/numOfYScale));
+	}
+	myContext.restore();
+}
+
+function drawTextLabels() {
+	var labels = ['< 0.0', '\u2265 0.0', '\u2265 1.0', '\u2265 2.0', '\u2265 3.0', '\u2265 4.0', '\u2265 5.0', '\u2265 6.0', '\u2265 7.0', '\u2265 8.0', '\u2265 9.0', '\u2265 10.0'];
+	var numOfData = 12;
+	var barWidth = 4/5*420 /numOfData;
+	var barGap = 1/5*420/(numOfData+1);
+
+	myContext.save();
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'top';
+	for (var i=0; numOfData>i; i++) {
+		var horTextPos = (i+1)*barGap + (i+0.5)*barWidth + 60;
+		myContext.fillText(labels[i], horTextPos, 310, barWidth);
+	}
+	myContext.restore();
+}
+
+function drawVBars() {
+	var dataValues = [0, 2, 8, 1, 4, 4, 1, 3, 4, 3, 2, 0];
+	var colors = ['#000000', '#FF0000', '#0000FF', '#00FF00', '#FFafaf', '#404040', '#FFc800', '#FF00FF', '#FFFF00', '#00FFFF', '#c0c0c0', '#7896d2'];
+	var yScale = 1;
+	var numOfYScale = 8;
+	var chartHeight = 280;
+	var chartWidth = 420;
+	var xScale = 0;
+	var numOfXScale = 0;
+	var startXScale = 0;
+	var barWidth = 4/5*420 /dataValues.length;
+	var barGap = 1/5*420/(dataValues.length+1);
+
+	myContext.save();
+	for (var i=0; dataValues.length>i; i++) {
+		var startX = (i+1)*barGap + i*barWidth;
+		var barHeight = dataValues[i]/(yScale*numOfYScale) * chartHeight;
+		myContext.fillStyle = colors[i];
+		myContext.fillRect(xToCanvasCoordinate(startX), yToCanvasCoordinate(0), barWidth, 0-barHeight);
+	}
+	myContext.restore();
+}
+
+function drawXScale() {
+}
+
+function xToCanvasCoordinate(xCoordinate) {
+	return 60 + xCoordinate;
+}
+
+function yToCanvasCoordinate(yCoordinate) {
+	return myCanvas.height-50 - yCoordinate;
+}
+
+function toRad(x) {
+	return (x*Math.PI)/180;
+};
+//-->
+</script>
+<div align="center"><h3> </h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Title</div></b></td><td><b><div align="left">(Re)set</div></b></td><td><b><div align="left">Obs</div></b></td><td><b><div align="left">Mean</div></b></td><td><b><div align="left">Std.Dev</div></b></td><td><b><div align="left">Min</div></b></td><td><b><div align="left">Max</div></b></td><td><b><div align="left">Unit</div></b></td></tr>
+<tr valign="top"><td>tempo de atendimento dos pacientes normal</td><td>0.0000</td><td>22</td><td>21.79082</td><td>4.15332</td><td>14.25491</td><td>29.70462</td><td>none</td></tr>
+</table><p></p>
+<div align="center"><h3> </h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Cell</div></b></td><td><b><div align="left">Cell Range</div></b></td><td><b><div align="left">n</div></b></td><td><b><div align="left">%</div></b></td><td><b><div align="left">Cum. %</div></b></td><td><b><div align="left">|</div></b></td><td><b><div align="left">Color</div></b></td></tr>
+<tr valign="top"><td>0</td><td>(-Infinity, 10.0)</td><td>0</td><td>0.0</td><td>0.0</td><td>|</td><td width="20" bgcolor="#000000"></td></tr>
+<tr valign="top"><td>1</td><td>[10.0, 14.0)</td><td>0</td><td>0.0</td><td>0.0</td><td>|</td><td width="20" bgcolor="#FF0000"></td></tr>
+<tr valign="top"><td>2</td><td>[14.0, 18.0)</td><td>4</td><td>18.18182</td><td>18.18182</td><td>|</td><td width="20" bgcolor="#0000FF"></td></tr>
+<tr valign="top"><td>3</td><td>[18.0, 22.0)</td><td>8</td><td>36.36364</td><td>54.54546</td><td>|</td><td width="20" bgcolor="#00FF00"></td></tr>
+<tr valign="top"><td>4</td><td>[22.0, 26.0)</td><td>7</td><td>31.81818</td><td>86.36364</td><td>|</td><td width="20" bgcolor="#FFafaf"></td></tr>
+<tr valign="top"><td>5</td><td>[26.0, 30.0)</td><td>3</td><td>13.63636</td><td>100.0</td><td>|</td><td width="20" bgcolor="#404040"></td></tr>
+<tr valign="top"><td>6</td><td>[30.0, Infinity)</td><td>0</td><td>0.0</td><td>100.0</td><td>|</td><td width="20" bgcolor="#FFc800"></td></tr>
+</table><p></p>
+<div align="center">
+<canvas id="histogramCanvas2" width="500" height="350">
+Your browser is not able to display this graphic.<br />
+This could be because it does not support the canvas-Element by html5<noscript> or because it does not support JavaScript</noscript>.
+</canvas>
+</div><p></p>
+<script type="text/javascript">
+<!--
+var myCanvas = document.getElementById('histogramCanvas2');
+var myContext = myCanvas.getContext('2d');
+
+myContext.strokeStyle = '#000000';
+drawXScale();
+drawYScale();
+drawXAxis();
+drawYAxis();
+drawVBars();
+drawTextLabels();
+
+myContext.strokeRect(0, 0, myCanvas.width, myCanvas.height);
+
+function drawXAxis() {
+	myContext.beginPath();
+	myContext.moveTo(60, myCanvas.height-50);
+	myContext.lineTo(myCanvas.width-20, myCanvas.height-50);
+	myContext.stroke();
+	myContext.closePath();
+
+	myContext.save();
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'bottom';
+	myContext.font = 'bold 8pt Georgia';
+	myContext.fillText('tempo de atendimento dos pacientes normal', 270, 340);
+	myContext.restore();
+}
+
+function drawYAxis() {
+	myContext.beginPath();
+	myContext.moveTo(60, 20);
+	myContext.lineTo(60, myCanvas.height-50);
+	myContext.stroke();
+	myContext.closePath();
+
+	myContext.save();
+	myContext.translate(0, myCanvas.height);
+	myContext.rotate(toRad(270));
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'top';
+	myContext.font = 'bold 8pt Georgia';
+	myContext.fillText('n', 190, 10);
+	myContext.restore();
+}
+
+function drawYScale() {
+	var yScale = 1;
+	var numOfYScale = 8;
+	var chartHeight = 280;
+	var chartWidth = 420;
+
+	myContext.save();
+	myContext.strokeStyle = '#bebebe';
+	for (var i=1; numOfYScale>=i; i++) {
+		myContext.beginPath();
+		myContext.moveTo(xToCanvasCoordinate(0-5), yToCanvasCoordinate(i*chartHeight/numOfYScale));
+		myContext.lineTo(xToCanvasCoordinate(chartWidth),  yToCanvasCoordinate(i*chartHeight/numOfYScale));
+		myContext.stroke();
+		myContext.closePath();
+	}
+	myContext.restore();
+
+	myContext.save();
+	myContext.textAlign = 'right';
+	myContext.textBaseline = 'middle';
+	for (var i=0; numOfYScale>=i; i++) {
+		var scaleText = i*yScale;
+		myContext.fillText(scaleText, 50, yToCanvasCoordinate(i*chartHeight/numOfYScale));
+	}
+	myContext.restore();
+}
+
+function drawTextLabels() {
+	var labels = ['< 10.0', '\u2265 10.0', '\u2265 14.0', '\u2265 18.0', '\u2265 22.0', '\u2265 26.0', '\u2265 30.0'];
+	var numOfData = 7;
+	var barWidth = 4/5*420 /numOfData;
+	var barGap = 1/5*420/(numOfData+1);
+
+	myContext.save();
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'top';
+	for (var i=0; numOfData>i; i++) {
+		var horTextPos = (i+1)*barGap + (i+0.5)*barWidth + 60;
+		myContext.fillText(labels[i], horTextPos, 310, barWidth);
+	}
+	myContext.restore();
+}
+
+function drawVBars() {
+	var dataValues = [0, 0, 4, 8, 7, 3, 0];
+	var colors = ['#000000', '#FF0000', '#0000FF', '#00FF00', '#FFafaf', '#404040', '#FFc800'];
+	var yScale = 1;
+	var numOfYScale = 8;
+	var chartHeight = 280;
+	var chartWidth = 420;
+	var xScale = 0;
+	var numOfXScale = 0;
+	var startXScale = 0;
+	var barWidth = 4/5*420 /dataValues.length;
+	var barGap = 1/5*420/(dataValues.length+1);
+
+	myContext.save();
+	for (var i=0; dataValues.length>i; i++) {
+		var startX = (i+1)*barGap + i*barWidth;
+		var barHeight = dataValues[i]/(yScale*numOfYScale) * chartHeight;
+		myContext.fillStyle = colors[i];
+		myContext.fillRect(xToCanvasCoordinate(startX), yToCanvasCoordinate(0), barWidth, 0-barHeight);
+	}
+	myContext.restore();
+}
+
+function drawXScale() {
+}
+
+function xToCanvasCoordinate(xCoordinate) {
+	return 60 + xCoordinate;
+}
+
+function yToCanvasCoordinate(yCoordinate) {
+	return myCanvas.height-50 - yCoordinate;
+}
+
+function toRad(x) {
+	return (x*Math.PI)/180;
+};
+//-->
+</script>
+<div align="center"><h3> </h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Title</div></b></td><td><b><div align="left">(Re)set</div></b></td><td><b><div align="left">Obs</div></b></td><td><b><div align="left">Mean</div></b></td><td><b><div align="left">Std.Dev</div></b></td><td><b><div align="left">Min</div></b></td><td><b><div align="left">Max</div></b></td><td><b><div align="left">Unit</div></b></td></tr>
+<tr valign="top"><td>tempo de atendimento dos pacientes grave</td><td>0.0000</td><td>10</td><td>11.70218</td><td>1.91853</td><td>8.39846</td><td>13.79926</td><td>none</td></tr>
+</table><p></p>
+<div align="center"><h3> </h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Cell</div></b></td><td><b><div align="left">Cell Range</div></b></td><td><b><div align="left">n</div></b></td><td><b><div align="left">%</div></b></td><td><b><div align="left">Cum. %</div></b></td><td><b><div align="left">|</div></b></td><td><b><div align="left">Color</div></b></td></tr>
+<tr valign="top"><td>0</td><td>(-Infinity, 5.0)</td><td>0</td><td>0.0</td><td>0.0</td><td>|</td><td width="20" bgcolor="#000000"></td></tr>
+<tr valign="top"><td>1</td><td>[5.0, 7.0)</td><td>0</td><td>0.0</td><td>0.0</td><td>|</td><td width="20" bgcolor="#FF0000"></td></tr>
+<tr valign="top"><td>2</td><td>[7.0, 9.0)</td><td>1</td><td>10.0</td><td>10.0</td><td>|</td><td width="20" bgcolor="#0000FF"></td></tr>
+<tr valign="top"><td>3</td><td>[9.0, 11.0)</td><td>3</td><td>30.0</td><td>40.0</td><td>|</td><td width="20" bgcolor="#00FF00"></td></tr>
+<tr valign="top"><td>4</td><td>[11.0, 13.0)</td><td>2</td><td>20.0</td><td>60.0</td><td>|</td><td width="20" bgcolor="#FFafaf"></td></tr>
+<tr valign="top"><td>5</td><td>[13.0, 15.0)</td><td>4</td><td>40.0</td><td>100.0</td><td>|</td><td width="20" bgcolor="#404040"></td></tr>
+<tr valign="top"><td>6</td><td>[15.0, Infinity)</td><td>0</td><td>0.0</td><td>100.0</td><td>|</td><td width="20" bgcolor="#FFc800"></td></tr>
+</table><p></p>
+<div align="center">
+<canvas id="histogramCanvas3" width="500" height="350">
+Your browser is not able to display this graphic.<br />
+This could be because it does not support the canvas-Element by html5<noscript> or because it does not support JavaScript</noscript>.
+</canvas>
+</div><p></p>
+<script type="text/javascript">
+<!--
+var myCanvas = document.getElementById('histogramCanvas3');
+var myContext = myCanvas.getContext('2d');
+
+myContext.strokeStyle = '#000000';
+drawXScale();
+drawYScale();
+drawXAxis();
+drawYAxis();
+drawVBars();
+drawTextLabels();
+
+myContext.strokeRect(0, 0, myCanvas.width, myCanvas.height);
+
+function drawXAxis() {
+	myContext.beginPath();
+	myContext.moveTo(60, myCanvas.height-50);
+	myContext.lineTo(myCanvas.width-20, myCanvas.height-50);
+	myContext.stroke();
+	myContext.closePath();
+
+	myContext.save();
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'bottom';
+	myContext.font = 'bold 8pt Georgia';
+	myContext.fillText('tempo de atendimento dos pacientes grave', 270, 340);
+	myContext.restore();
+}
+
+function drawYAxis() {
+	myContext.beginPath();
+	myContext.moveTo(60, 20);
+	myContext.lineTo(60, myCanvas.height-50);
+	myContext.stroke();
+	myContext.closePath();
+
+	myContext.save();
+	myContext.translate(0, myCanvas.height);
+	myContext.rotate(toRad(270));
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'top';
+	myContext.font = 'bold 8pt Georgia';
+	myContext.fillText('n', 190, 10);
+	myContext.restore();
+}
+
+function drawYScale() {
+	var yScale = 1;
+	var numOfYScale = 4;
+	var chartHeight = 280;
+	var chartWidth = 420;
+
+	myContext.save();
+	myContext.strokeStyle = '#bebebe';
+	for (var i=1; numOfYScale>=i; i++) {
+		myContext.beginPath();
+		myContext.moveTo(xToCanvasCoordinate(0-5), yToCanvasCoordinate(i*chartHeight/numOfYScale));
+		myContext.lineTo(xToCanvasCoordinate(chartWidth),  yToCanvasCoordinate(i*chartHeight/numOfYScale));
+		myContext.stroke();
+		myContext.closePath();
+	}
+	myContext.restore();
+
+	myContext.save();
+	myContext.textAlign = 'right';
+	myContext.textBaseline = 'middle';
+	for (var i=0; numOfYScale>=i; i++) {
+		var scaleText = i*yScale;
+		myContext.fillText(scaleText, 50, yToCanvasCoordinate(i*chartHeight/numOfYScale));
+	}
+	myContext.restore();
+}
+
+function drawTextLabels() {
+	var labels = ['< 5.0', '\u2265 5.0', '\u2265 7.0', '\u2265 9.0', '\u2265 11.0', '\u2265 13.0', '\u2265 15.0'];
+	var numOfData = 7;
+	var barWidth = 4/5*420 /numOfData;
+	var barGap = 1/5*420/(numOfData+1);
+
+	myContext.save();
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'top';
+	for (var i=0; numOfData>i; i++) {
+		var horTextPos = (i+1)*barGap + (i+0.5)*barWidth + 60;
+		myContext.fillText(labels[i], horTextPos, 310, barWidth);
+	}
+	myContext.restore();
+}
+
+function drawVBars() {
+	var dataValues = [0, 0, 1, 3, 2, 4, 0];
+	var colors = ['#000000', '#FF0000', '#0000FF', '#00FF00', '#FFafaf', '#404040', '#FFc800'];
+	var yScale = 1;
+	var numOfYScale = 4;
+	var chartHeight = 280;
+	var chartWidth = 420;
+	var xScale = 0;
+	var numOfXScale = 0;
+	var startXScale = 0;
+	var barWidth = 4/5*420 /dataValues.length;
+	var barGap = 1/5*420/(dataValues.length+1);
+
+	myContext.save();
+	for (var i=0; dataValues.length>i; i++) {
+		var startX = (i+1)*barGap + i*barWidth;
+		var barHeight = dataValues[i]/(yScale*numOfYScale) * chartHeight;
+		myContext.fillStyle = colors[i];
+		myContext.fillRect(xToCanvasCoordinate(startX), yToCanvasCoordinate(0), barWidth, 0-barHeight);
+	}
+	myContext.restore();
+}
+
+function drawXScale() {
+}
+
+function xToCanvasCoordinate(xCoordinate) {
+	return 60 + xCoordinate;
+}
+
+function yToCanvasCoordinate(yCoordinate) {
+	return myCanvas.height-50 - yCoordinate;
+}
+
+function toRad(x) {
+	return (x*Math.PI)/180;
+};
+//-->
+</script>
+<font size="-1"><a href="#top">top</a></font><p></p>
+<hr><div align="center"><h3>Counts and Aggregates</h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Title</div></b></td><td><b><div align="left">Type</div></b></td><td><b><div align="left">(Re)set</div></b></td><td><b><div align="left">Obs</div></b></td><td><b><div align="left">Current Value</div></b></td><td><b><div align="left">Min</div></b></td><td><b><div align="left">Max</div></b></td><td><b><div align="left">Unit</div></b></td></tr>
+<tr valign="top"><td>qtd de pacientes total</td><td>Count</td><td>0.0000</td><td>32</td><td>32</td><td>0</td><td>32</td><td>none</td></tr>
+<tr valign="top"><td>qtd de pacientes estado normal</td><td>Count</td><td>0.0000</td><td>22</td><td>22</td><td>0</td><td>22</td><td>none</td></tr>
+<tr valign="top"><td>qtd de pacientes estado grave</td><td>Count</td><td>0.0000</td><td>10</td><td>10</td><td>0</td><td>10</td><td>none</td></tr>
+</table><p></p>
+<font size="-1"><a href="#top">top</a></font><p></p>
+<hr><div align="center"><h3>Queues</h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Title</div></b></td><td><b><div align="left">Qorder</div></b></td><td><b><div align="left">(Re)set</div></b></td><td><b><div align="left">Obs</div></b></td><td><b><div align="left">QLimit</div></b></td><td><b><div align="left">Qmax</div></b></td><td><b><div align="left">Qnow</div></b></td><td><b><div align="left">Qavg.</div></b></td><td><b><div align="left">Zeros</div></b></td><td><b><div align="left">max.Wait</div></b></td><td><b><div align="left">avg.Wait</div></b></td><td><b><div align="left">refus.</div></b></td></tr>
+<tr valign="top"><td>Fila de Pacientes do Consultório 1</td><td>FIFO</td><td>0.0000</td><td>24</td><td>unlimit.</td><td>2</td><td>0</td><td>0.23548</td><td>12</td><td>1682.9807</td><td>353.2180</td><td>0</td></tr>
+<tr valign="top"><td>Fila de Pacientes do Consultório 2</td><td>FIFO</td><td>0.0000</td><td>6</td><td>unlimit.</td><td>1</td><td>0</td><td>0.06219</td><td>3</td><td>1073.9414</td><td>373.1156</td><td>0</td></tr>
+<tr valign="top"><td>Fila de Pacientes do Consultório 3</td><td>FIFO</td><td>0.0000</td><td>2</td><td>unlimit.</td><td>1</td><td>0</td><td>0.01164</td><td>1</td><td>419.1859</td><td>209.5929</td><td>0</td></tr>
+</table><p></p>
+<font size="-1"><a href="#top">top</a></font><p></p>
+<hr><div align="center"><h3>Distributions</h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Title</div></b></td><td><b><div align="left">(Re)set</div></b></td><td><b><div align="left">Obs</div></b></td><td><b><div align="left">Type</div></b></td><td><b><div align="left">Parameter 1</div></b></td><td><b><div align="left">Parameter 2</div></b></td><td><b><div align="left">Parameter 3</div></b></td><td><b><div align="left">Seed</div></b></td></tr>
+<tr valign="top"><td>atendimento de paciente normal</td><td>0.0000</td><td>22</td><td>Cont Normal</td><td>20.0</td><td>5.0</td><td> </td><td>1736103416071</td></tr>
+<tr valign="top"><td>atendimento de paciente grave</td><td>0.0000</td><td>17</td><td>Cont Normal</td><td>10.0</td><td>3.0</td><td> </td><td>1736103416071</td></tr>
+<tr valign="top"><td>chegada de paciente</td><td>0.0000</td><td>33</td><td>Cont Exponential</td><td>15.0</td><td> </td><td> </td><td>1736103416070</td></tr>
+</table><p></p>
+<font size="-1"><a href="#top">top</a></font><p></p>
+<font size="-2">created using <a href="http://www.desmoj.de">DESMO-J</A> Version 2.5.1e at Sun Jan 05 15:56:56 GMT-03:00 2025 - DESMO-J is licensed under <A HREF=http://www.apache.org/licenses/LICENSE-2.0>Apache License, Version 2.0</A></font>
+</body></html>
